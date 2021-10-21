@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tycoon" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="Tycoon" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="$(codeblocks)/../SFML/include/" />
+					<Add directory="$(codeblocks)/../Box2D/" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-system-d" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="$(codeblocks)/../Box2D/libbox2d.a" />
+					<Add directory="$(codeblocks)/../SFML/lib/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="Brick.h" />
+		<Unit filename="Button.h" />
+		<Unit filename="Food.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="physics.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
